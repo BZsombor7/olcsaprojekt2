@@ -48,7 +48,7 @@ def szin_ellenoriz(event=None):
     stop()
     szin_hatar = int(clicked.get())
 
-    if ent_color.get() == szinek[vlb_hex - 1]:
+    if ent_color.get().lower() == szinek[vlb_hex - 1].lower():
         if first:
             lbl_high.configure(text=f"Rekord: {lbl_szamlalo['text']}")
             first = False
